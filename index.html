@@ -21,12 +21,12 @@
 
 <style>
 /* Invite visitors to explore the projects. */
-.hero .actions .primary{position:relative;display:inline-flex;align-items:center;gap:8px;cursor:pointer;box-shadow:0 5px 16px rgba(36,92,224,.22);transition:transform .2s ease,background .2s ease,box-shadow .2s ease;animation:explore-glow 3s ease-in-out infinite}
-.hero .actions .primary span{display:inline-block;animation:explore-arrow 3s ease-in-out infinite}
+.hero .actions .primary{position:relative;display:inline-flex;align-items:center;gap:8px;cursor:pointer;box-shadow:0 5px 16px rgba(36,92,224,.22);transition:transform .2s ease,background .2s ease,box-shadow .2s ease;animation:explore-glow 1.6s ease-in-out infinite}
+.hero .actions .primary span{display:inline-block;animation:explore-arrow 5s ease-in-out infinite}
 .hero .actions .primary:hover,.hero .actions .primary:focus-visible{animation:none;transform:translateY(-3px);background:#1748bb;box-shadow:0 9px 24px rgba(36,92,224,.32)}
 .hero .actions .primary:hover span,.hero .actions .primary:focus-visible span{animation:none;transform:translate(2px,-2px)}
 .hero .actions .primary:active{transform:translateY(0);box-shadow:0 3px 10px rgba(36,92,224,.2)}
-@keyframes explore-glow{0%,100%{box-shadow:0 5px 16px rgba(36,92,224,.22),0 0 0 0 rgba(36,92,224,.18)}50%{box-shadow:0 7px 22px rgba(36,92,224,.3),0 0 0 7px rgba(36,92,224,0)}}
+@keyframes explore-glow{0%,100%{transform:scale(1);box-shadow:0 5px 16px rgba(36,92,224,.22),0 0 0 0 rgba(36,92,224,.18)}50%{transform:scale(1.06);box-shadow:0 7px 22px rgba(36,92,224,.3),0 0 0 7px rgba(36,92,224,0)}}
 @keyframes explore-arrow{0%,65%,100%{transform:translate(0,0)}75%,90%{transform:translate(2px,-2px)}82%{transform:translate(0,0)}}
 @media(prefers-reduced-motion:reduce){.hero .actions .primary,.hero .actions .primary span{animation:none;transition:none}.hero .actions .primary:hover,.hero .actions .primary:focus-visible,.hero .actions .primary:hover span,.hero .actions .primary:focus-visible span{transform:none}}
 </style>
